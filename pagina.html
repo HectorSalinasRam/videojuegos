@@ -1,70 +1,118 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html><html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Videojuegos</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ramírez Salinas Héctor Claudio</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fdf6ec;
+      color: #3a2c1e;
+    }
+    header {
+      background-color: #fff;
+      padding: 20px;
+      display: flex;
+      justify-content: space-around;
+      border-bottom: 2px solid #d5b895;
+    }
+    header nav a {
+      color: #3a2c1e;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 15px;
+    }
+    section {
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .hero img {
+      max-width: 300px;
+      border-radius: 8px;
+    }
+    h1, h2 {
+      color: #5c3d2e;
+    }
+    .quote {
+      background-color: #b86435;
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+      font-size: 1.5em;
+    }
+    .timeline {
+      margin-top: 20px;
+    }
+    .timeline-item {
+      margin-bottom: 15px;
+    }
+  </style>
 </head>
-<body class="bg-gray-100 text-gray-900">
-
-  <!-- Encabezado -->
-  <header class="bg-white shadow p-4 flex justify-between items-center">
-    <div class="flex items-center gap-2 text-2xl font-bold">
-      <span>🎮</span>
-      <span>VIDEOJUEGOS</span>
-    </div>
-    <nav class="space-x-4 text-sm font-semibold">
-      <a href="#" class="hover:text-blue-600">Inicio</a>
-      <a href="#" class="hover:text-blue-600">Acerca</a>
-      <a href="#" class="hover:text-blue-600">Contacto</a>
+<body>
+  <header>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#sobre-mi">Sobre Mí</a>
+      <a href="#mi-camino">Mi Camino</a>
+      <a href="#logros">Mis Logros</a>
     </nav>
-  </header>
-
-<!-- Hero -->
-<section class="bg-white text-center py-8 px-4">
-  <img src="retro.jpg" alt="Videojuegos retro" class="mx-auto mb-4 rounded shadow-md max-h-64 object-cover w-full max-w-4xl">
-  
- <a href="https://www.metacritic.com/browse/games/release-date/available/all/date/" target="_blank">
-  <button class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 mt-2">
-    Explorar Juegos
-  </button>
-</a>
-
- <!-- Últimas Noticias -->
-<section class="px-6 py-8">
-  <h2 class="text-2xl font-bold mb-6">Últimas Noticias</h2>
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-    <a href="https://as.com/meristation/noticias/switch-2-detalla-las-mejoras-gratuitas-de-los-primeros-juegos-asi-se-ve-pokemon-escarlata-y-purpura-mejorado-n/" target="_blank" class="block bg-white p-4 rounded shadow hover:shadow-lg transition">
-      <img src="switch2.jpg" alt="Nintendo Switch 2" class="h-32 w-full object-cover rounded mb-2">
-      <p class="text-sm text-gray-700">Nintendo Switch 2 detalla las mejoras gratuitas de los primeros juegos.</p>
-    </a>
-    <a href="https://news.xbox.com/en-us/2023/01/25/goldeneye-007-xbox-game-pass-release-date/" target="_blank" class="block bg-white p-4 rounded shadow hover:shadow-lg transition">
-      <img src="goldeneye.jpg" alt="GoldenEye 007" class="h-32 w-full object-cover rounded mb-2">
-      <p class="text-sm text-gray-700">GoldenEye 007 llega a Xbox Game Pass.</p>
-    </a>
-    <a href="https://www.3djuegos.com/juegos/fallout/noticias/grupo-entusiastas-fallout-esta-haciendo-rpg-retro-al-estilo-dos-primeras-entregas-saga-su-mundo-ciencia-ficcion-luce-prometedor" target="_blank" class="block bg-white p-4 rounded shadow hover:shadow-lg transition">
-      <img src="fallout.jpg" alt="RPG Fallout retro" class="h-32 w-full object-cover rounded mb-2">
-      <p class="text-sm text-gray-700">Fans de Fallout crean un RPG retro al estilo de las primeras entregas.</p>
-    </a>
+  </header>  <section id="inicio">
+    <div class="hero">
+      <div>
+        <h1>Mi Historia</h1>
+        <p>Conoce quién soy, de dónde vengo y hacia dónde voy.</p>
+      </div>
+      <img src="https://via.placeholder.com/300x300" alt="Héctor Claudio">
+    </div>
+  </section>  <section id="sobre-mi">
+    <h2>¿Quién soy?</h2>
+    <p>Mi nombre es Ramírez Salinas Héctor Claudio, nací el 23 de febrero del 2007 en Pachuca, Hidalgo. Actualmente tengo 18 años y estoy por terminar el último año de preparatoria. Soy una persona curiosa, dedicada y con muchas ganas de seguir aprendiendo y superándome.</p>
+  </section>  <section id="mi-camino">
+    <h2>Mi Camino</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <strong>2007:</strong> Nací en Pachuca, Hidalgo.
+      </div>
+      <div class="timeline-item">
+        <strong>2013:</strong> Reconocido en primaria por ser participativo.
+      </div>
+      <div class="timeline-item">
+        <strong>2019:</strong> Gané la Feria de Ciencias con un proyecto sobre energías renovables.
+      </div>
+      <div class="timeline-item">
+        <strong>2020:</strong> En pandemia, me certifiqué en programación y obtuve 9no lugar en matemáticas estatales.
+      </div>
+      <div class="timeline-item">
+        <strong>2021:</strong> 5to lugar en oratoria interescolar.
+      </div>
+      <div class="timeline-item">
+        <strong>2023:</strong> Participé en la Olimpiada de Biología.
+      </div>
+    </div>
+  </section>  <section id="logros">
+    <h2>Mis Logros</h2>
+    <ul>
+      <li>Primer lugar en Feria de Ciencias escolar.</li>
+      <li>aprendi en programación básica durante la pandemia.</li>
+      <li>Noveno lugar en concurso estatal de matemáticas.</li>
+      <li>Quinto lugar en oratoria interescolar.</li>
+      <li>Proyectos con el Club de Ciencia: app educativa.</li>
+      <li>Participe en Olimpiada de Biología.</li>
+      <li>Practico baloncesto</li>
+      <li>Tener una vida feliz.</li>
+    </ul>
+  </section>  <div class="quote">
+    “La vida es un viaje, no un destino.”<br>
+    – Héctor Claudio
   </div>
-</section>
-
-<!-- Reseñas -->
-<section class="px-6 py-8">
-  <h2 class="text-2xl font-bold mb-6">Reseñas</h2>
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-    <a href="https://www.nintendolife.com/news/2022/09/heres-a-look-at-the-stunning-box-art-for-zelda-tears-of-the-kingdom" target="_blank" class="block bg-white p-4 rounded shadow hover:shadow-lg transition">
-      <img src="zelda.jpg" alt="Zelda: Tears of the Kingdom" class="h-32 w-full object-cover rounded mb-2">
-      <p class="text-sm text-gray-700">"Zelda: Tears of the Kingdom" - Una obra maestra moderna.</p>
-    </a>
-    <a href="https://www.timeextension.com/features/soapbox-theres-no-excuse-for-street-fighter-having-bad-box-art-capcom" target="_blank" class="block bg-white p-4 rounded shadow hover:shadow-lg transition">
-      <img src="streetfighter6.jpg" alt="Street Fighter 6" class="h-32 w-full object-cover rounded mb-2">
-      <p class="text-sm text-gray-700">"Street Fighter 6" - Vuelve con más fuerza y estilo.</p>
-    </a>
-    <a href="https://www.cbr.com/square-enix-final-fantasy-7-rebirth-box-art-cloud-sephiroth-zack-explained/" target="_blank" class="block bg-white p-4 rounded shadow hover:shadow-lg transition">
-      <img src="ff7rebirth.jpg" alt="Final Fantasy VII Rebirth" class="h-32 w-full object-cover rounded mb-2">
-      <p class="text-sm text-gray-700">"Final Fantasy VII Rebirth" - Nostalgia y novedad bien equilibradas.</p>
-    </a>
-  </div>
-</section>
+</body>
+</html>
